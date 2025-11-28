@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register page</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/
+boxicons.min.css' rel='stylesheet'>
+    <link href="https://fontawesome.com/" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="register-body">
+     <div class="wrapper">
+        <form id="registerForm" method="POST" action="../Backend/register.php">
+            <h1>Register</h1>
+            <div class="input-box">
+                <input class="Username1"  type="Username" placeholder="Enter Username" 
+                required>
+                <i class='bx bxs-user'></i>
+            </div>
+            <div class="input-box">
+                <input class="email1" type="email" placeholder="Enter Email" 
+                required>
+                <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="input-box">
+                <input class="password1" type="password" 
+                placeholder="password" 
+                required>
+                <i class='bx bxs-lock-alt' ></i>
+            </div>
+            <div class="input-box">
+                <input class="password2" type="password" 
+                placeholder="confirm password" 
+                required>
+                <i class='bx bxs-lock-alt' ></i>
+            </div>
+
+
+            <button type="submit" class="btn">Register</button>
+
+            <div class="register-link">
+                <p>Already have an account?  
+                    <a href="index.html">Login here</a></p>
+            </div>
+        </form>
+    </div>
+
+    <div id="popupMessage" class="popup-message"></div>
+
+    <script src="../Backend/JS/Register.js"></script>
+</body>
+</html>
