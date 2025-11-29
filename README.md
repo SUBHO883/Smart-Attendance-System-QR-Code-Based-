@@ -116,7 +116,7 @@ Add your project owner and team details here so the README shows attribution and
 ```markdown
 **Project Owner:** Subho (Owner)
 **Team:** RedDragon Dev Team — Subho (Lead) + (Frontend), Rahul (Backend), Suraj (UI Designer & Visual Architect)
-**Contact:** subho@example.com
+**Contact:** https://github.com/SUBHO883
 
 ---
 
