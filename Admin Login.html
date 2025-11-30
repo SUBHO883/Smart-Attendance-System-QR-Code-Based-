@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Authentication</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="admin-page">
+  <div class="auth-container">
+    <h1 id="formTitle" class="auth-title">Admin Login</h1>
+
+    <form id="authForm" class="auth-form">
+      <!-- Email -->
+      <div class="form-group">
+        <label for="email" class="form-label">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+          class="form-input"
+          placeholder="admin@example.com"
+        />
+      </div>
+
+      <!-- Password -->
+      <div id="passwordDiv" class="form-group">
+        <label for="password" class="form-label">Password</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          required
+          class="form-input"
+          placeholder="Enter your password"
+        />
+      </div>
+
+      <!-- Confirm Password -->
+      <div id="confirmPasswordDiv" class="form-group hidden">
+        <label for="confirmPassword" class="form-label">Confirm Password</label>
+        <input
+          type="password"
+          id="confirmPassword"
+          name="confirmPassword"
+          class="form-input"
+          placeholder="Confirm your password"
+        />
+      </div>
+
+      <div id="message" class="form-message"></div>
+
+      <button
+        type="submit"
+        id="submitBtn"
+        class="btn-submit"
+      >
+        Login
+      </button>
+    </form>
+
+    <div class="auth-footer">
+      <p id="loginText">
+        Don't have an account?
+        <button id="switchToRegister" class="link-btn">Register</button>
+      </p>
+      <p id="registerText" class="hidden">
+        Already have an account?
+        <button id="switchToLogin" class="link-btn">Login</button>
+      </p>
+      <p id="forgotPasswordText" class="mt-4">
+        <button id="switchToForgot" class="link-btn">Forgot Password?</button>
+      </p>
+      <p id="backToLoginText" class="hidden mt-4">
+        <button id="backToLogin" class="link-btn">Back to Login</button>
+      </p>
+    </div>
+  </div>
+
+
+  <script>
+    // Mousemove background color animation
+    document.body.addEventListener("mousemove", (e) => {
+      let x = e.clientX / window.innerWidth;
+      let y = e.clientY / window.innerHeight;
+      document.body.style.background = `radial-gradient(circle at ${x*100}% ${y*100}%, rgb(0,183,255), rgb(255,0,200), rgb(0,0,0))`;
+    });
+  </script>
+  <!-- External JS -->
+  <script src="../Backend/JS/Admin.js"></script>
+</body>
+</html>
